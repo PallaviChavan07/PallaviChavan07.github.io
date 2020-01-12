@@ -22,7 +22,10 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body hr { 
+	width: 60%;
+	margin-left: 20%;
+}
 
 /*Contact section hidden*/
 
@@ -222,9 +225,18 @@ ul#nav li.current a { color: #F06000; }
 #about a, #about a:visited  { color: #11ABB0; }
 #about a:hover, #about a:focus { color: #11ABB0; }
 
+#about h1 {
+   font: 15px/24px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
    margin-bottom: 12px;
 }
 #about p {
@@ -232,8 +244,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-     width: 154px;
-    height: 185px;
+   width: 154px;
+   height: 185px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -263,22 +275,6 @@ p.more_info{
   color: #313131;
 }
 
-.skills-logo {
-    display: inline-block;
-    max-width: 90px;
-    text-align: center;
-    margin: 0 13px 15px 0;
-}
-
-.skills-logo img{
-  width:65%;
-}
-
-.skill p{
-  color:#313131
-}
-
-
 /* ------------------------------------------------------------------ */
 /* d. experience Section
 /* ------------------------------------------------------------------ */
@@ -297,11 +293,21 @@ p.more_info{
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
-}
-#experience h1 span {
+   text-align: center;
+   margin-bottom: 48px;
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
+#experience h1 span {
+	font: 15px/24px 'opensans-semibold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 48px;
+	border-bottom: 3px solid #11ABB0;
+	padding-bottom: 6px;
+}
+
 #experience h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
@@ -329,9 +335,95 @@ p.more_info{
    margin-top: 6px;
 }
 
+#experience .logo {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+}
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
+
+.skills-logo {
+    display: inline-block;
+    max-width: 90px;
+    text-align: center;
+    margin: 0 13px 15px 0;
+}
+
+.skills-logo img{
+  width:65%;
+}
+
+.skill p{
+  color:#313131
+}
+
+#skills {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#skills a, #skills a:visited  { color: #11ABB0; }
+#skills a:hover, #skills a:focus { color: #313131; }
+
+#skills h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#skills h1 span {
+	font: 15px/24px 'opensans-semibold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 48px;
+	border-bottom: 3px solid #11ABB0;
+	padding-bottom: 6px;
+}
+
+#skills h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#skills .header-col { padding-top: 9px; }
+#skills .main-col { padding-right: 10%; }
+
+ .work, .skill {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#skills .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#skills .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#skills .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+#skills .logo {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+}
+
 
 .bars {
 	width: 95%;
@@ -470,7 +562,8 @@ p.more_info{
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
 }
 
 /* Portfolio Content */
