@@ -280,9 +280,14 @@
    <script type="text/javascript" src="./js/init.js" defer></script>
    
    <!-- CSS -->
-   <link rel="stylesheet" href="./css/default.css">
+   <link rel="preload" href="./css/default.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="./css/default.css"></noscript>
+   <link rel="preload" href="./css/layout.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="./css/layout.css"></noscript>
+   <link rel="preload" href="./css/media-queries.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="./css/media-queries.css"></noscript>
+   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"></noscript>
+   
+   <!--<link rel="stylesheet" href="./css/default.css">
    <link rel="stylesheet" href="./css/layout.css">
    <link rel="stylesheet" href="./css/media-queries.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">-->
    
 </body></html>
